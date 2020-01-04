@@ -6,6 +6,7 @@
 .pnp.js
 *.css
 *.css.map
+/src/mds
 
 # testing
 /coverage
