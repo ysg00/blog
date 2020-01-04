@@ -1,44 +1,25 @@
 {
-  "name": "devblog",
-  "version": "0.1.0",
+  "name": "hexo-site",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "antd": "^3.26.4",
-    "bootstrap": "^4.4.1",
-    "gh-pages": "^2.1.1",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-markdown": "^4.2.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
-    "reactstrap": "^8.2.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "hexo": {
+    "version": "4.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "homepage": "https://ysg00.githug.io/devblog"
+  "dependencies": {
+    "hexo": "^4.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-server": "^1.0.0"
+  }
 }
