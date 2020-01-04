@@ -3,23 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: DevBlog
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Hang Yu
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://ysg00.github.io/devblog
+root: /devblog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+#pretty_urls:
+#  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+#  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -98,4 +98,7 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/ysg00/devblog.git 
+  branch: gh-pages
+  message: 'update public webpage'
