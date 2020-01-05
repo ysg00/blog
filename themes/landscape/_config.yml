@@ -11,7 +11,7 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- recent_posts
+- recent_updates
 - category
 - tag
 
