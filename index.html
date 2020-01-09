@@ -86,7 +86,7 @@
 <h2 id="Setup-React-Environment"><a href="#Setup-React-Environment" class="headerlink" title="Setup React Environment"></a>Setup React Environment</h2><p>It is crutial to have environment variables in react app when you not have a stable backend, so that some variable like <code>API_URL</code> can be changed on different builds. React use .env file to specify common env variables on all builds. <code>create-react-app</code> would not create this kind files  by default. Also with <code>create-react-app</code>, all env variable declared must prefixed with <code>REACT_APP_</code>.</p>
 <p>When execute <code>npm start</code>, it automatically read the env variables declared in .env and .env.development if these files exist. In most of the cases I have the real <code>API_URL</code> in <code>npm start</code> build. So we need to create a new .env file, for example .env.mock</p>
 <p>Then inside <code>&quot;scripts&quot;</code> section in  <code>package.json</code></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...... </span><br><span class="line">	"scripts": &#123;</span><br><span class="line">    "start": "react-scripts start",</span><br><span class="line">    "build": "react-scripts build",</span><br><span class="line">    ......</span><br><span class="line">  &#125;,</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...... </span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "start": "react-scripts start",</span><br><span class="line">    "build": "react-scripts build",</span><br><span class="line">    ......</span><br><span class="line">  &#125;,</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 
 <p>add the following line</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"mock": "env-cmd -f .env.mock react-scripts start"</span><br></pre></td></tr></table></figure>
@@ -127,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ysg00.github.io/devblog/2020/01/08/Mock-Fully-Functional-Api-Endpoint-For-React-App-Using-Json-Server/" data-id="ck566p9ek0001w3k2boqicyft" class="article-share-link">Share</a>
+      <a data-url="https://ysg00.github.io/devblog/2020/01/08/Mock-Fully-Functional-Api-Endpoint-For-React-App-Using-Json-Server/" data-id="ck566rfz4000008k2aq0ffj2n" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/devblog/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/devblog/tags/React/" rel="tag">React</a></li></ul>
@@ -196,7 +196,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ysg00.github.io/devblog/2020/01/05/Build-Personal-Blog-Site-With-Hexo/" data-id="ck566p9ea0000w3k2fhm8faye" class="article-share-link">Share</a>
+      <a data-url="https://ysg00.github.io/devblog/2020/01/05/Build-Personal-Blog-Site-With-Hexo/" data-id="ck566rfzf000108k24u9kfui7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/devblog/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/devblog/tags/JavaScript/" rel="tag">JavaScript</a></li></ul>
