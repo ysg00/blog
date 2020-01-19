@@ -1,0 +1,10 @@
+ignore:
+  # ignore themes/xxx/node_modules/
+  - "**/node_modules/**"
+  # ignore themes/xxx/.git/ and other hidden files
+  - "**/.*"
+
+widgets:
+  - recent_updates
+  - category
+  - tag
