@@ -10,7 +10,7 @@
   
   <title>
     
-      Blog
+      Tags | Blog
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -183,33 +183,45 @@
   </div>
 </header>
 
-    <main class="app-body">
+    <div id="article-banner">
+  <h2>Tags</h2>
+  <p class="post-date">Tag Retrieval</p>
+</div>
+<main class="app-body">
+  <div id="tag-cloud">
+    
+      <a class="tag1" data-name="tag-test">test</a>
+    
+  </div>
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/blog/2021/08/05/hello-world/">Hello World</a>
-      </h2>
-      <p class="article-date">August 5, 2021</p>
+    <div class="tag-list">
+      <h3 class="tag-name" id="tag-test">test</h3>
       
+        <ul class="tag-preview">
+          <li>
+            <a href="/blog/2021/08/05/hello-world/">Hello World</a>
+          </li>
+        </ul>
         
-  <a href="/blog/blog/tags#test" >
-    <span class="tag-code">test</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer ...
-        
-      </div>
-      <a class="more" href="/blog/2021/08/05/hello-world/">Read more</a>
-    </article>
-  
-
-  
+    </div>
+    
 </main>
 
+<script>
+  (function () {
+    var url = 'https://ysg00.github.io/blog/tags/index.html'
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
 
+    var tag = location.hash.replace('#', '')
+    if (tag) {
+      var tagId = "#tag-" + tag;
+      $("html, body").animate({
+        scrollTop: $(tagId).offset().top 
+      }, 400)
+    }
+  })();
+</script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
