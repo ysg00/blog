@@ -151,8 +151,8 @@
         owner: "<%= theme['gitment_owner'] %>",
         repo: "<%= theme['gitment_repo'] %>",
         oauth: {
-          client_id: "<%= process.env.OAUTH_ID %>",
-          client_secret: "<%= process.env.OAUTH_SECRET %>"
+          client_id: "<%= theme['gitment_oauth_id'] %>",
+          client_secret: "<%= theme['gitment_oauth_secret'] %>"
         },
         theme: {
           render(state, instance) {

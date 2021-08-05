@@ -29,8 +29,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages # deploying branch
-          OAUTH_ID: ${{ secrets.OAUTH_ID }}
-          OAUTH_SECRET: ${{ secrets.OAUTH_SECRET }}
-        env:
-          OAUTH_ID: ${{ secrets.OAUTH_ID }}
-          OAUTH_SECRET: ${{ secrets.OAUTH_SECRET }}

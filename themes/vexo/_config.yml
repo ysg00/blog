@@ -36,9 +36,9 @@ utterances_theme: github-light  # you can see other available options at 'https:
 
 # gitment config
 gitment_owner: ysg00
-gitment_repo: https://ysg00.github.io/blog/
-gitment_oauth_id: ${OAUTH_ID}
-gitment_oauth_secret: ${OAUTH_SECRET}
+gitment_repo: https://ysg00.github.io/blog
+gitment_oauth_id: 63a062023b7fec962d18
+gitment_oauth_secret: aebd075b33f7a4c1bede9fbd138c6f3d45d8d64f
 
 # uyan config
 # if you want to use uyan as your blog comment, plz remove/comment out gitment config
