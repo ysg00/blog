@@ -27,18 +27,18 @@ qrcode: false
 
 # comment
 # you can set utterances, gitment, uyan or disqus
-comment: gitment
+comment: utterances
 
 # utterances config
-utterances_repo:                # e.g. GitHubAccount/RepoForUtterances
+utterances_repo: ysg00/blog
 utterances_issue_term: pathname # you can see other available options at 'https://utteranc.es/'
 utterances_theme: github-light  # you can see other available options at 'https://utteranc.es/'
 
-# gitment config
-gitment_owner: ysg00
-gitment_repo: blog
-gitment_oauth_id: 63a062023b7fec962d18
-gitment_oauth_secret: aebd075b33f7a4c1bede9fbd138c6f3d45d8d64f
+# # gitment config
+# gitment_owner: ysg00
+# gitment_repo: blog
+# gitment_oauth_id: 63a062023b7fec962d18
+# gitment_oauth_secret: aebd075b33f7a4c1bede9fbd138c6f3d45d8d64f
 
 # uyan config
 # if you want to use uyan as your blog comment, plz remove/comment out gitment config
