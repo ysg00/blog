@@ -36,7 +36,7 @@ utterances_theme: github-light  # you can see other available options at 'https:
 
 # gitment config
 gitment_owner: ysg00
-gitment_repo: https://ysg00.github.io/blog
+gitment_repo: blog
 gitment_oauth_id: 63a062023b7fec962d18
 gitment_oauth_secret: aebd075b33f7a4c1bede9fbd138c6f3d45d8d64f
 
